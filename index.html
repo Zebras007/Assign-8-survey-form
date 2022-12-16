@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FreeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="./surveyform.css">
+</head>
+<body>
+    <div id="container">
+    <fieldset>
+        <form action="#"id="survey-form">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+            <br>
+            <!-- for name input -->
+            <label id="name-label" for="name">Name</label> <br>
+            <input type="text" id="name" placeholder="Enter your name"> <br> <br>
+            <!-- for email input -->
+            <label for="email" id="email-label">Email</label> <br>
+            <input type="email" id=email" placeholder="Enter your Email"> <br> <br>
+            <!-- for Age input -->
+            <label for="number" id="number-label">Age <span>(optional)</span></label> <br>
+            <input type="number" name="number" id="number" min="13" max="120" placeholder="Age"/> <br> <br>
+            <p>Which option best describes your current role?</p> 
+            <select id="dropdown" name="dropdown">
+                <option disabled selected value>select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="prefer Not">Prefer Not To Say</option>
+                <option value="other">Other</option>
+                </select> <br> <br>
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <input type="radio" name="recommended" id="radio" value="definitely" checked required>
+                <label for="radio">Definitely</label> <br>
+                <input type="radio" name="recommended" id="radio" value="Maybe" required>
+                <label for="radio">Maybe</label> <br>
+                <input type="radio" name="recommended" id="radio" value="Not sure" required>
+                <label for="radio">Not sure</label> <br> <br>
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <input type="checkbox" id="Checkbox" value="ront-end Projects">
+                <label for="Checkbox">ront-end Projects</label> <br>
+                <input type="checkbox" id="Checkbox" value="Back-end Projects">
+                <label for="Checkbox">Back-end Projects</label> <br>
+                <input type="checkbox" id="Checkbox" value="Data Visualization">
+                <label for="Checkbox">Data Visualization</label> <br>
+                <input type="checkbox" id="Checkbox" value="Challenges">
+                <label for="Checkbox">Challenges</label> <br>
+                <input type="checkbox" id="Checkbox" value="Open Source Community">
+                <label for="Checkbox">Open Source Community</label> <br>
+                <input type="checkbox" id="Checkbox" value="Videos">
+                <label for="Checkbox">Videos</label> <br>
+                <input type="checkbox" id="Checkbox" value="Additional Courses">
+                <label for="Checkbox">Additional Courses</label> <br>
+                <input type="checkbox" id="Checkbox" value="Gitter help rooms">
+                <label for="Checkbox">Gitter help rooms</label> <br>
+                <input type="checkbox" id="Checkbox" value=City Meetups">
+                <label for="Checkbox">City Meetups</label> <br>
+                <input type="checkbox" id="Checkbox" value="Forum">
+                <label for="Checkbox">Forum</label> <br>
+                <input type="checkbox" id="Checkbox" value="Wiki">
+                <label for="Checkbox">Wiki</label><br> <br>
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="Comment" cols="30" rows="3" placeholder="Enter your comment here...">
+                </textarea>
+                <br>
+                <button id="submit" value="submit">submit</button>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
